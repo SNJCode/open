@@ -1,0 +1,104 @@
+REMARK LIGPARGEN GENERATED PDB FILE
+ATOM      1  C00 MOL     1       1.211   2.273  -0.529
+ATOM      2  H01 MOL     1       1.262   2.152  -1.624
+ATOM      3  C02 MOL     1      -0.032   1.528  -0.020
+ATOM      4  H03 MOL     1      -0.005   1.539   1.091
+ATOM      5  C04 MOL     1      -1.319   2.220  -0.462
+ATOM      6  H05 MOL     1      -1.225   3.292  -0.222
+ATOM      7  H06 MOL     1      -1.392   2.150  -1.561
+ATOM      8  C07 MOL     1      -2.609   1.698   0.195
+ATOM      9  H08 MOL     1      -2.439   1.695   1.286
+ATOM     10  C09 MOL     1      -2.970   0.277  -0.205
+ATOM     11  C0A MOL     1      -3.098  -0.727   0.763
+ATOM     12  C0B MOL     1      -3.237  -0.051  -1.543
+ATOM     13  C0C MOL     1      -3.431  -2.036   0.404
+ATOM     14  H0D MOL     1      -2.932  -0.477   1.813
+ATOM     15  C0E MOL     1      -3.570  -1.355  -1.909
+ATOM     16  H0F MOL     1      -3.183   0.725  -2.312
+ATOM     17  C0G MOL     1      -3.642  -2.362  -0.938
+ATOM     18  H0H MOL     1      -3.524  -2.804   1.176
+ATOM     19  H0I MOL     1      -3.772  -1.589  -2.958
+ATOM     20  H0J MOL     1      -3.864  -3.393  -1.228
+ATOM     21  C0K MOL     1       2.544   1.841   0.114
+ATOM     22  H0M MOL     1       2.438   1.983   1.204
+ATOM     23  C0N MOL     1       2.864   0.372  -0.109
+ATOM     24  C0O MOL     1       2.926  -0.520   0.972
+ATOM     25  C0P MOL     1       3.104  -0.129  -1.400
+ATOM     26  C0Q MOL     1       3.218  -1.875   0.775
+ATOM     27  H0R MOL     1       2.741  -0.145   1.982
+ATOM     28  C0S MOL     1       3.395  -1.479  -1.602
+ATOM     29  H0T MOL     1       3.060   0.546  -2.258
+ATOM     30  C0U MOL     1       3.454  -2.358  -0.514
+ATOM     31  H0V MOL     1       3.260  -2.551   1.632
+ATOM     32  H0W MOL     1       3.577  -1.847  -2.614
+ATOM     33  H0X MOL     1       3.681  -3.415  -0.673
+ATOM     34  C0Y MOL     1       3.695   2.754  -0.354
+ATOM     35  H0Z MOL     1       3.400   3.801  -0.164
+ATOM     36  H10 MOL     1       3.802   2.666  -1.449
+ATOM     37  H11 MOL     1       1.078   3.350  -0.336
+ATOM     38  C12 MOL     1      -3.777   2.670  -0.078
+ATOM     39  H13 MOL     1      -3.464   3.680   0.237
+ATOM     40  H14 MOL     1      -3.944   2.731  -1.168
+ATOM     41  C15 MOL     1       5.031   2.464   0.326
+ATOM     42  H16 MOL     1       5.378   1.442   0.109
+ATOM     43  H17 MOL     1       5.811   3.163  -0.013
+ATOM     44  H18 MOL     1       4.946   2.559   1.422
+ATOM     45  C19 MOL     1      -5.078   2.294   0.626
+ATOM     46  H1A MOL     1      -5.864   3.042   0.437
+ATOM     47  H1B MOL     1      -5.452   1.317   0.282
+ATOM     48  H1C MOL     1      -4.934   2.228   1.718
+ATOM     49  O1D MOL     1      -0.077   0.190  -0.489
+ATOM     50  H1E MOL     1       0.710  -0.272  -0.171
+TER 
+CONECT    1    2 
+CONECT    1    3 
+CONECT    3    4 
+CONECT    3    5 
+CONECT    5    6 
+CONECT    5    7 
+CONECT    5    8 
+CONECT    8    9 
+CONECT    8   10 
+CONECT   10   11 
+CONECT   10   12 
+CONECT   11   13 
+CONECT   11   14 
+CONECT   12   15 
+CONECT   12   16 
+CONECT   13   17 
+CONECT   13   18 
+CONECT   15   19 
+CONECT   17   20 
+CONECT    1   21 
+CONECT   21   22 
+CONECT   21   23 
+CONECT   23   24 
+CONECT   23   25 
+CONECT   24   26 
+CONECT   24   27 
+CONECT   25   28 
+CONECT   25   29 
+CONECT   26   30 
+CONECT   26   31 
+CONECT   28   32 
+CONECT   30   33 
+CONECT   21   34 
+CONECT   34   35 
+CONECT   34   36 
+CONECT    1   37 
+CONECT    8   38 
+CONECT   38   39 
+CONECT   38   40 
+CONECT   34   41 
+CONECT   41   42 
+CONECT   41   43 
+CONECT   41   44 
+CONECT   38   45 
+CONECT   45   46 
+CONECT   45   47 
+CONECT   45   48 
+CONECT    3   49 
+CONECT   49   50 
+CONECT   15   17 
+CONECT   28   30 
+END
