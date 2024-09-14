@@ -1,0 +1,96 @@
+
+set nook { }
+set glo {}
+
+proc get_next_atom { id } {
+	global nook
+	global glo
+	set st [ [ atomselect top "index $id" ] getbonds ]
+
+	foreach i [lindex $st 0] {
+		#puts iiii$i
+
+		if { [lsearch -exact $nook  $i ] >=0 } { continue }
+		if { [lsearch -exact $glo $i ] >=0 } { continue } else { lappend glo $i}
+		get_next_atom  $i
+
+	}
+
+
+
+}
+
+
+proc get_fragment_index { args } { 
+	global glo
+	global nook
+	set nook { }
+	set glo {}
+	set n 0
+	    foreach arg $args {
+		    if { $n == 0} { set index $arg } else { lappend nook  $arg}
+		    incr n
+	    }
+
+        
+	get_next_atom  $index
+
+
+	set gg A
+	set ww index
+	foreach i $glo {
+	  set gg [ append gg [format ",%d" [expr $i+1 ]  ]  ]
+	  set ww [ append ww [format " %d" $i  ]  ]
+	  
+	}
+
+	puts $gg
+	
+	set bb [ [ atomselect top "$ww"] get name ]
+	puts BBB$bb
+	
+}
+
+
+proc get_part { args } { 
+	
+	foreach xx  $args {
+		set qq [ [ atomselect top "serial $xx" ] get name ]
+		puts RRRR$qq	
+	
+	}
+	   
+	set nl [ llength $args ] 
+	puts $nl
+	set a 0
+	while { $a < $nl } {
+	   if { $a == 0 } { 
+	   	#puts 0000-[lindex $args $a ]
+	   	#puts 0000-[ lindex $args [expr $a+1 ] ]
+	   	
+	   	
+	   	get_fragment_index [expr [lindex $args $a ]-1 ] [expr [ lindex $args [expr $a+1 ]   ]-1 ]   
+	   	
+	   } elseif { $a < [ expr $nl-2 ] } {
+	   	#puts 1111-[lindex $args $a ]
+	   	#puts 01111-[ lindex $args [expr $a+2 ] ]
+	   	#puts 01111-[ lindex $args [expr $a-1 ]  ] 
+	   	get_fragment_index [ expr [lindex $args $a ]-1] [expr [ lindex $args [expr $a+2 ] ]-1] [expr [ lindex $args [expr $a-1 ]  ] -1 ]
+	   	incr a
+	   	
+	   } elseif { $a == [ expr $nl-1 ] } {
+	
+	   #puts [lindex $args $a ]
+	   	#puts 12222-[lindex $args $a ]
+	   	#puts 02222-[ lindex $args [expr $a-1 ]  ] 
+	   		get_fragment_index [expr [lindex $args $a ]-1] [expr [ lindex $args [expr $a-1 ]  ]-1]
+	   		
+	   	}
+	   	
+	   	
+	   incr a
+	}
+
+
+
+}
